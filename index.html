@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend Salary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    Salary Calculator
+</header>
+<body>
+<h1>
+    <header>Add Employee</header>
+        <form onsubmit="handleSubmit(event)">
+            <input id="firstName" type="text" placeholder="First Name"> <input id="lastName" type="text" placeholder="Last Name"> <input id="ID" type="text" placeholder="ID"> <input id="Title" type="text" placeholder="Title">
+            <input id="SalaryInput" type="text" placeholder="Salary Input"> <button id="SubmitButton" type="submit" onclick="clickedSubmit(event)">Submit</button>
+        </form> 
+</h1>
+
+<h1>
+<header>Employees</header>
+
+</h1>
+    <table>
+        <thead>
+          <tr>
+            <th id="FirstName">First Name</th>
+            <th id="Last Name">Last Name</th>
+            <th id="ID">ID</th>
+            <th id="Title">Title</th>
+            <th id="Annual Salary">Annual Salary</th>
+            <th id="DeleteButton"></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr>
+            <td> </td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td><button onclick="deleteRow()"> Delete </button></td>
+          </tr>
+          <tr>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>Delete Button</td>
+          </tr>
+          <tr>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>Delete Button</td>
+          </tr>
+        </tbody>
+      </table>
+          <script src="script.js"></script>
+</body>
+</html>
