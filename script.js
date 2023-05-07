@@ -29,8 +29,8 @@ let totalSalaray = 0;
 
 function addMonthlyCosts(object) {
     let sum =  totalSalaray += Number(object.annualSalary);
-    document.getElementById("totalCosts").innerHTML = `<div> Monthly Cost: ${sum}</div>`
-    if(totalSalaray >= 20000){
+    document.getElementById("totalCosts").innerHTML = `<div> Monthly Cost: ${sum / 12}</div>`
+    if(totalSalaray > 240000){
         document.getElementById("totalCosts").style.backgroundColor= 'red';
     }
 
